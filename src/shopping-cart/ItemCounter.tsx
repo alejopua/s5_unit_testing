@@ -32,6 +32,7 @@ export const ItemCounter = ({ name, quantity = 1 }: Props) => {
       // }}
     >
       <span
+        data-testid="item-name"
         className={styles["item-text"]}
         style={{
           color: count === 1 ? "red" : "black",
