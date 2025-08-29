@@ -42,3 +42,17 @@ describe("Multiply", () => {
     expect(result).toBe(a * b);
   });
 });
+
+describe("Divide", () => {
+  test("should return the divide of two positive numbers", () => {
+    // ! 1. Arrange
+    const a: number = 5;
+    const b: number = 5;
+
+    // ! 2. Act
+    const result = divide(a, b);
+
+    // ! 3. Assert
+    expect(result).toBe(a / b);
+  });
+});
